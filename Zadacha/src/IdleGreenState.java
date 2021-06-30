@@ -3,7 +3,7 @@ import java.awt.Color;
 public class IdleGreenState extends State {
 
 	@Override
-	public void handlePush(Context c) {
+	public void handleChangeHorseState(ContextHorse c) {
 		c.setState(new EatingRedState());
 	}
 
@@ -14,7 +14,7 @@ public class IdleGreenState extends State {
 	}
 
 	@Override
-	public void handlePull(Context b) {
+	public void handleChangeCowState(ContextCow b) {
 		b.setState(new EatingRedState());
 	}
 }

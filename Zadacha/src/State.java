@@ -2,7 +2,7 @@ import java.awt.Color;
 
 public abstract class State {
 
-	public abstract void handlePush(Context c);
-	public abstract void handlePull(Context b);
+	public abstract void handleChangeHorseState(ContextHorse c);
+	public abstract void handleChangeCowState(ContextCow b);
 	public abstract Color getColor();
 }
